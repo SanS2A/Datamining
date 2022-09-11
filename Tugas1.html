@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Tugas 1 &#8212; Data Mining</title>
+    <title>PENAMBANGAN DATA &#8212; Data Mining</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -50,9 +50,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Tugas 1" href="notebooks.html" />
+    <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -118,14 +120,11 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks.html">
-   Tugas 1
-  </a>
- </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Tugas 1
+   <strong>
+    PENAMBANGAN DATA
+   </strong>
   </a>
  </li>
 </ul>
@@ -334,37 +333,43 @@ title="Print to PDF"
     </div>
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#membaca-data-dari-url">
-   1.   Membaca data dari URL
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#kolom-fitur-atribut">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
    <strong>
-    Kolom/Fitur/Atribut
+    PENAMBANGAN DATA
    </strong>
   </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-statistik-deskriptif">
+     A. STATISTIK DESKRIPTIF
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#median-nilai-tengah">
-   Median -&gt; Nilai tengah
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tugas-1">
+   Tugas 1
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#mean-rata-rata">
-   Mean -&gt; Rata-rata
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#modulus-nilai-yang-sering-muncul">
-   Modulus -&gt; Nilai yang sering muncul
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#mendeskripsikan-kemiringan-skewned-dari-data-setiap-variabel-bertipe-numerik">
-   3.   Mendeskripsikan kemiringan/skewned dari data setiap variabel(bertipe numerik)
-  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#membaca-data-dari-url">
+     1.   Membaca data dari URL
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#kolom-fitur-atribut">
+     <strong>
+      Kolom/Fitur/Atribut
+     </strong>
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mendeskripsikan-kemiringan-skewned-dari-data-setiap-variabel-bertipe-numerik">
+     3.   Mendeskripsikan kemiringan/skewned dari data setiap variabel(bertipe numerik)
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -375,7 +380,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Tugas 1</h1>
+                <h1>PENAMBANGAN DATA</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -385,37 +390,43 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#membaca-data-dari-url">
-   1.   Membaca data dari URL
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#kolom-fitur-atribut">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
    <strong>
-    Kolom/Fitur/Atribut
+    PENAMBANGAN DATA
    </strong>
   </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-statistik-deskriptif">
+     A. STATISTIK DESKRIPTIF
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#median-nilai-tengah">
-   Median -&gt; Nilai tengah
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tugas-1">
+   Tugas 1
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#mean-rata-rata">
-   Mean -&gt; Rata-rata
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#modulus-nilai-yang-sering-muncul">
-   Modulus -&gt; Nilai yang sering muncul
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#mendeskripsikan-kemiringan-skewned-dari-data-setiap-variabel-bertipe-numerik">
-   3.   Mendeskripsikan kemiringan/skewned dari data setiap variabel(bertipe numerik)
-  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#membaca-data-dari-url">
+     1.   Membaca data dari URL
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#kolom-fitur-atribut">
+     <strong>
+      Kolom/Fitur/Atribut
+     </strong>
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mendeskripsikan-kemiringan-skewned-dari-data-setiap-variabel-bertipe-numerik">
+     3.   Mendeskripsikan kemiringan/skewned dari data setiap variabel(bertipe numerik)
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -427,8 +438,61 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="tugas-1">
+  <section class="tex2jax_ignore mathjax_ignore" id="penambangan-data">
+<h1><strong>PENAMBANGAN DATA</strong><a class="headerlink" href="#penambangan-data" title="Permalink to this headline">#</a></h1>
+<section id="a-statistik-deskriptif">
+<h2>A. STATISTIK DESKRIPTIF<a class="headerlink" href="#a-statistik-deskriptif" title="Permalink to this headline">#</a></h2>
+<blockquote>
+<div><p><em>Statik deskriptif adalah metode yang berkaitan dengan pengumpulan / penyajian data hingga memberi informasi yang berguna.</em></p>
+</div></blockquote>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="tugas-1">
 <h1>Tugas 1<a class="headerlink" href="#tugas-1" title="Permalink to this headline">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
+<span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="ne">KeyboardInterrupt</span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="n">d5df0069828e</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
+
+<span class="nn">/usr/local/lib/python3.7/dist-packages/google/colab/drive.py</span> in <span class="ni">mount</span><span class="nt">(mountpoint, force_remount, timeout_ms)</span>
+<span class="g g-Whitespace">    </span><span class="mi">103</span>       <span class="n">force_remount</span><span class="o">=</span><span class="n">force_remount</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">104</span>       <span class="n">timeout_ms</span><span class="o">=</span><span class="n">timeout_ms</span><span class="p">,</span>
+<span class="ne">--&gt; </span><span class="mi">105</span>       <span class="n">ephemeral</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">106</span> 
+<span class="g g-Whitespace">    </span><span class="mi">107</span> 
+
+<span class="nn">/usr/local/lib/python3.7/dist-packages/google/colab/drive.py</span> in <span class="ni">_mount</span><span class="nt">(mountpoint, force_remount, timeout_ms, ephemeral)</span>
+<span class="g g-Whitespace">    </span><span class="mi">118</span>   <span class="k">if</span> <span class="n">ephemeral</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">119</span>     <span class="n">_message</span><span class="o">.</span><span class="n">blocking_request</span><span class="p">(</span>
+<span class="ne">--&gt; </span><span class="mi">120</span>         <span class="s1">&#39;request_auth&#39;</span><span class="p">,</span> <span class="n">request</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;authType&#39;</span><span class="p">:</span> <span class="s1">&#39;dfs_ephemeral&#39;</span><span class="p">},</span> <span class="n">timeout_sec</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">121</span> 
+<span class="g g-Whitespace">    </span><span class="mi">122</span>   <span class="n">mountpoint</span> <span class="o">=</span> <span class="n">_os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">expanduser</span><span class="p">(</span><span class="n">mountpoint</span><span class="p">)</span>
+
+<span class="nn">/usr/local/lib/python3.7/dist-packages/google/colab/_message.py</span> in <span class="ni">blocking_request</span><span class="nt">(request_type, request, timeout_sec, parent)</span>
+<span class="g g-Whitespace">    </span><span class="mi">169</span>   <span class="n">request_id</span> <span class="o">=</span> <span class="n">send_request</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">170</span>       <span class="n">request_type</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="n">parent</span><span class="p">,</span> <span class="n">expect_reply</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">171</span>   <span class="k">return</span> <span class="n">read_reply_from_input</span><span class="p">(</span><span class="n">request_id</span><span class="p">,</span> <span class="n">timeout_sec</span><span class="p">)</span>
+
+<span class="nn">/usr/local/lib/python3.7/dist-packages/google/colab/_message.py</span> in <span class="ni">read_reply_from_input</span><span class="nt">(message_id, timeout_sec)</span>
+<span class="g g-Whitespace">     </span><span class="mi">95</span>     <span class="n">reply</span> <span class="o">=</span> <span class="n">_read_next_input_message</span><span class="p">()</span>
+<span class="g g-Whitespace">     </span><span class="mi">96</span>     <span class="k">if</span> <span class="n">reply</span> <span class="o">==</span> <span class="n">_NOT_READY</span> <span class="ow">or</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">reply</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+<span class="ne">---&gt; </span><span class="mi">97</span>       <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.025</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">98</span>       <span class="k">continue</span>
+<span class="g g-Whitespace">     </span><span class="mi">99</span>     <span class="k">if</span> <span class="p">(</span><span class="n">reply</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;type&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;colab_reply&#39;</span> <span class="ow">and</span>
+
+<span class="ne">KeyboardInterrupt</span>: 
+</pre></div>
+</div>
+</div>
+</div>
 <section id="membaca-data-dari-url">
 <h2>1.   Membaca data dari URL<a class="headerlink" href="#membaca-data-dari-url" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
@@ -454,7 +518,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-c2c486a3-2d28-4452-a296-c156a24fb497">
+  <div id="df-01ccd789-2b3e-49be-8b11-880797a82c39">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -682,7 +746,7 @@ title="Print to PDF"
 </table>
 <p>1025 rows × 14 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-c2c486a3-2d28-4452-a296-c156a24fb497')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-01ccd789-2b3e-49be-8b11-880797a82c39')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -733,12 +797,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-c2c486a3-2d28-4452-a296-c156a24fb497 button.colab-df-convert');
+          document.querySelector('#df-01ccd789-2b3e-49be-8b11-880797a82c39 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-c2c486a3-2d28-4452-a296-c156a24fb497');
+          const element = document.querySelector('#df-01ccd789-2b3e-49be-8b11-880797a82c39');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -801,7 +865,7 @@ memory usage: 112.2 KB
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-84d457e7-c0c3-41b4-ae6a-e0ecd9731e47">
+  <div id="df-4f32d968-ee3e-413e-b757-01c6a5995677">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -926,7 +990,7 @@ memory usage: 112.2 KB
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-84d457e7-c0c3-41b4-ae6a-e0ecd9731e47')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-4f32d968-ee3e-413e-b757-01c6a5995677')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -977,12 +1041,12 @@ memory usage: 112.2 KB
 
       <script>
         const buttonEl =
-          document.querySelector('#df-84d457e7-c0c3-41b4-ae6a-e0ecd9731e47 button.colab-df-convert');
+          document.querySelector('#df-4f32d968-ee3e-413e-b757-01c6a5995677 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-84d457e7-c0c3-41b4-ae6a-e0ecd9731e47');
+          const element = document.querySelector('#df-4f32d968-ee3e-413e-b757-01c6a5995677');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1012,7 +1076,7 @@ memory usage: 112.2 KB
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-e3ef9a3d-6e59-43dd-8638-09b4a8098366">
+  <div id="df-a45fe326-1b9a-4b3d-9783-68608a3df0de">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1137,7 +1201,7 @@ memory usage: 112.2 KB
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-e3ef9a3d-6e59-43dd-8638-09b4a8098366')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-a45fe326-1b9a-4b3d-9783-68608a3df0de')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1188,12 +1252,12 @@ memory usage: 112.2 KB
 
       <script>
         const buttonEl =
-          document.querySelector('#df-e3ef9a3d-6e59-43dd-8638-09b4a8098366 button.colab-df-convert');
+          document.querySelector('#df-a45fe326-1b9a-4b3d-9783-68608a3df0de button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-e3ef9a3d-6e59-43dd-8638-09b4a8098366');
+          const element = document.querySelector('#df-a45fe326-1b9a-4b3d-9783-68608a3df0de');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1233,19 +1297,6 @@ memory usage: 112.2 KB
 <li><p>thal: 0 = normal; 1 = fixed defect; 2 = reversable defect</p></li>
 </ul>
 <p>##2.   Membuat Statistik Deskriptif dari data (setiap atribut yang bertipe numerik)</p>
-<p>Statistik Deskriptif yang ada:</p>
-<ul class="simple">
-<li><p>count - Jumlah nilai yang tidak kosong.</p></li>
-<li><p>mean - Nilai rata-rata (rata-rata).</p></li>
-<li><p>std - Standar deviasi.</p></li>
-<li><p>min - nilai minimum.</p></li>
-<li><p>25% - Persentil 25%*.</p></li>
-<li><p>50% - Persentil 50%*.</p></li>
-<li><p>75% - Persentil 75%*.</p></li>
-<li><p>maks - nilai maksimum.</p></li>
-<li><p>median - nilai tengah.</p></li>
-<li><p>mode- data yang paling banyak muncul</p></li>
-</ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#menampilkan informasi dari kolom data numerik </span>
@@ -1255,7 +1306,7 @@ memory usage: 112.2 KB
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-1fa37748-d3ac-40c4-aa4d-5ddedcbaf780">
+  <div id="df-23a8d71c-7a86-4fda-819b-20dee70d33e6">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1431,7 +1482,7 @@ memory usage: 112.2 KB
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-1fa37748-d3ac-40c4-aa4d-5ddedcbaf780')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-23a8d71c-7a86-4fda-819b-20dee70d33e6')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1482,12 +1533,12 @@ memory usage: 112.2 KB
 
       <script>
         const buttonEl =
-          document.querySelector('#df-1fa37748-d3ac-40c4-aa4d-5ddedcbaf780 button.colab-df-convert');
+          document.querySelector('#df-23a8d71c-7a86-4fda-819b-20dee70d33e6 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-1fa37748-d3ac-40c4-aa4d-5ddedcbaf780');
+          const element = document.querySelector('#df-23a8d71c-7a86-4fda-819b-20dee70d33e6');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1508,177 +1559,29 @@ memory usage: 112.2 KB
   </div>
 </div></div>
 </div>
-</section>
-<section id="median-nilai-tengah">
-<h2>Median -&gt; Nilai tengah<a class="headerlink" href="#median-nilai-tengah" title="Permalink to this headline">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">med</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;age&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span>
-		<span class="s1">&#39;sex&#39;</span><span class="p">:</span> <span class="n">c</span><span class="p">[</span><span class="s1">&#39;sex&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span><span class="s1">&#39;cp&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;cp&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span>
-    <span class="s1">&#39;trestbps&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;trestbps&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span><span class="s1">&#39;chol&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;chol&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span>
-    <span class="s1">&#39;fbs&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;fbs&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span><span class="s1">&#39;restecg&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;restecg&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span>
-    <span class="s1">&#39;thalach&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;thalach&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span><span class="s1">&#39;exang&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;exang&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span>
-    <span class="s1">&#39;oldpeak&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;oldpeak&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span><span class="s1">&#39;slope&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;slope&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span>
-    <span class="s1">&#39;ca&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;ca&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span><span class="s1">&#39;thal&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;thal&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span>
-     <span class="s1">&#39;target&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;target&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
-    <span class="p">}</span>
-
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">med</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;median&#39;</span><span class="p">])</span>
-<span class="n">df</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html">
-  <div id="df-18102c51-c9e4-43a3-a542-0a1e7fb86d0e">
-    <div class="colab-df-container">
-      <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>age</th>
-      <th>sex</th>
-      <th>cp</th>
-      <th>trestbps</th>
-      <th>chol</th>
-      <th>fbs</th>
-      <th>restecg</th>
-      <th>thalach</th>
-      <th>exang</th>
-      <th>oldpeak</th>
-      <th>slope</th>
-      <th>ca</th>
-      <th>thal</th>
-      <th>target</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>median</th>
-      <td>56.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>130.0</td>
-      <td>240.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>152.0</td>
-      <td>0.0</td>
-      <td>0.8</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>2.0</td>
-      <td>1.0</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-18102c51-c9e4-43a3-a542-0a1e7fb86d0e')"
-              title="Convert this dataframe to an interactive table."
-              style="display:none;">
-
-  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
-       width="24px">
-    <path d="M0 0h24v24H0V0z" fill="none"/>
-    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
-  </svg>
-      </button>
-
-  <style>
-    .colab-df-container {
-      display:flex;
-      flex-wrap:wrap;
-      gap: 12px;
-    }
-
-    .colab-df-convert {
-      background-color: #E8F0FE;
-      border: none;
-      border-radius: 50%;
-      cursor: pointer;
-      display: none;
-      fill: #1967D2;
-      height: 32px;
-      padding: 0 0 0 0;
-      width: 32px;
-    }
-
-    .colab-df-convert:hover {
-      background-color: #E2EBFA;
-      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
-      fill: #174EA6;
-    }
-
-    [theme=dark] .colab-df-convert {
-      background-color: #3B4455;
-      fill: #D2E3FC;
-    }
-
-    [theme=dark] .colab-df-convert:hover {
-      background-color: #434B5C;
-      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
-      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
-      fill: #FFFFFF;
-    }
-  </style>
-
-      <script>
-        const buttonEl =
-          document.querySelector('#df-18102c51-c9e4-43a3-a542-0a1e7fb86d0e button.colab-df-convert');
-        buttonEl.style.display =
-          google.colab.kernel.accessAllowed ? 'block' : 'none';
-
-        async function convertToInteractive(key) {
-          const element = document.querySelector('#df-18102c51-c9e4-43a3-a542-0a1e7fb86d0e');
-          const dataTable =
-            await google.colab.kernel.invokeFunction('convertToInteractive',
-                                                     [key], {});
-          if (!dataTable) return;
-
-          const docLinkHtml = 'Like what you see? Visit the ' +
-            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
-            + ' to learn more about interactive tables.';
-          element.innerHTML = '';
-          dataTable['output_type'] = 'display_data';
-          await google.colab.output.renderOutput(dataTable, element);
-          const docLink = document.createElement('div');
-          docLink.innerHTML = docLinkHtml;
-          element.appendChild(docLink);
-        }
-      </script>
-    </div>
-  </div>
-</div></div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">c</span><span class="p">[</span><span class="s2">&quot;age&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>56.0
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="mean-rata-rata">
-<h2>Mean -&gt; Rata-rata<a class="headerlink" href="#mean-rata-rata" title="Permalink to this headline">#</a></h2>
+<p>2.1 Mean (nilai rata-rata)</p>
+<blockquote>
+<div><p><em>Mean yaitu nilai rata-rata dari data</em></p>
+</div></blockquote>
+<blockquote>
+<div><ul class="simple">
+<li><p>Rumus Mean :</p></li>
+</ul>
+</div></blockquote>
+<div class="math notranslate nohighlight">
+\[Mean= \frac{x_{1}+x_{2}+x_{3}+...+x_{n}}{n}\]</div>
+<blockquote>
+<div><p>Mean = rata-rata</p>
+</div></blockquote>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\(x_{1}\)</span> = nilai data ke-1</p>
+</div></blockquote>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\(x_{n}\)</span> = nilai data ke-n</p>
+</div></blockquote>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\(n_{}\)</span> = banyaknya data</p>
+</div></blockquote>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mea</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;age&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span>
@@ -1698,7 +1601,7 @@ memory usage: 112.2 KB
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-53e6df19-966d-4801-8d05-901a810a0e05">
+  <div id="df-80e93d41-1ea5-434d-b61b-2d179ce3e8e1">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1755,7 +1658,7 @@ memory usage: 112.2 KB
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-53e6df19-966d-4801-8d05-901a810a0e05')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-80e93d41-1ea5-434d-b61b-2d179ce3e8e1')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1806,12 +1709,12 @@ memory usage: 112.2 KB
 
       <script>
         const buttonEl =
-          document.querySelector('#df-53e6df19-966d-4801-8d05-901a810a0e05 button.colab-df-convert');
+          document.querySelector('#df-80e93d41-1ea5-434d-b61b-2d179ce3e8e1 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-53e6df19-966d-4801-8d05-901a810a0e05');
+          const element = document.querySelector('#df-80e93d41-1ea5-434d-b61b-2d179ce3e8e1');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1844,9 +1747,193 @@ memory usage: 112.2 KB
 </div>
 </div>
 </div>
-</section>
-<section id="modulus-nilai-yang-sering-muncul">
-<h2>Modulus -&gt; Nilai yang sering muncul<a class="headerlink" href="#modulus-nilai-yang-sering-muncul" title="Permalink to this headline">#</a></h2>
+<p>2.2 Median (nilai tengah)</p>
+<blockquote>
+<div><p><em>Median yaitu nilai tengah dari data</em></p>
+</div></blockquote>
+<blockquote>
+<div><p>Rumus jika jumlah data ganjil :</p>
+</div></blockquote>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[M_{e}=\frac{X(n+1)}{2}\]</div>
+</div></blockquote>
+<blockquote>
+<div><p>Rumus jika jumlah data genap :</p>
+</div></blockquote>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[M_{e}=\frac{X_{\frac{n}{2}}+X(_{\frac{n}{2}+1})}{2}\]</div>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">med</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;age&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span>
+		<span class="s1">&#39;sex&#39;</span><span class="p">:</span> <span class="n">c</span><span class="p">[</span><span class="s1">&#39;sex&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span><span class="s1">&#39;cp&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;cp&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span>
+    <span class="s1">&#39;trestbps&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;trestbps&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span><span class="s1">&#39;chol&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;chol&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span>
+    <span class="s1">&#39;fbs&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;fbs&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span><span class="s1">&#39;restecg&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;restecg&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span>
+    <span class="s1">&#39;thalach&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;thalach&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span><span class="s1">&#39;exang&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;exang&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span>
+    <span class="s1">&#39;oldpeak&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;oldpeak&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span><span class="s1">&#39;slope&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;slope&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span>
+    <span class="s1">&#39;ca&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;ca&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span><span class="s1">&#39;thal&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;thal&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span>
+     <span class="s1">&#39;target&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;target&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+    <span class="p">}</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">med</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;median&#39;</span><span class="p">])</span>
+<span class="n">df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-8f7997f4-1a06-407f-adf9-1bcf5b118e79">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>age</th>
+      <th>sex</th>
+      <th>cp</th>
+      <th>trestbps</th>
+      <th>chol</th>
+      <th>fbs</th>
+      <th>restecg</th>
+      <th>thalach</th>
+      <th>exang</th>
+      <th>oldpeak</th>
+      <th>slope</th>
+      <th>ca</th>
+      <th>thal</th>
+      <th>target</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>median</th>
+      <td>56.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>130.0</td>
+      <td>240.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>152.0</td>
+      <td>0.0</td>
+      <td>0.8</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>2.0</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-8f7997f4-1a06-407f-adf9-1bcf5b118e79')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-8f7997f4-1a06-407f-adf9-1bcf5b118e79 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-8f7997f4-1a06-407f-adf9-1bcf5b118e79');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">c</span><span class="p">[</span><span class="s2">&quot;age&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>56.0
+</pre></div>
+</div>
+</div>
+</div>
+<p>2.3 Modus (Nilai paling sering muncul)</p>
+<blockquote>
+<div><p><em>Modus yaitu nilai yang paling sering muncul pada data</em></p>
+</div></blockquote>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mod</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;age&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">(),</span>
@@ -1866,7 +1953,7 @@ memory usage: 112.2 KB
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-af881fd1-7bd4-40f4-a9ac-9f2811cb6d32">
+  <div id="df-f1923fd5-a0fe-4c93-a0d2-c66dfd019df0">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1923,7 +2010,7 @@ memory usage: 112.2 KB
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-af881fd1-7bd4-40f4-a9ac-9f2811cb6d32')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-f1923fd5-a0fe-4c93-a0d2-c66dfd019df0')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1974,12 +2061,12 @@ memory usage: 112.2 KB
 
       <script>
         const buttonEl =
-          document.querySelector('#df-af881fd1-7bd4-40f4-a9ac-9f2811cb6d32 button.colab-df-convert');
+          document.querySelector('#df-f1923fd5-a0fe-4c93-a0d2-c66dfd019df0 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-af881fd1-7bd4-40f4-a9ac-9f2811cb6d32');
+          const element = document.querySelector('#df-f1923fd5-a0fe-4c93-a0d2-c66dfd019df0');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -2013,6 +2100,277 @@ dtype: int64
 </div>
 </div>
 </div>
+<p>2.5 Kuartil</p>
+<blockquote>
+<div><p><em>Kuartil adalah nilai-nilai yang membagi data yang telah diurutkan kedalam 4 bagian yang sama besar. Kuartil dinotasikan dengan notasi <span class="math notranslate nohighlight">\(Q\)</span>. Kuartil terdiri dari 3, yaitu kuartil pertama (<span class="math notranslate nohighlight">\(Q_{1}\)</span>), kuartil kedua (<span class="math notranslate nohighlight">\(Q_{2}\)</span>), dan kuartil ketiga (<span class="math notranslate nohighlight">\(Q_{3}\)</span>).</em></p>
+</div></blockquote>
+<blockquote>
+<div><p>Rumus kuartil data tunggal:</p>
+</div></blockquote>
+<blockquote>
+<div><p>Untuk banyaknya data <span class="math notranslate nohighlight">\((n)\)</span> ganjil dan <span class="math notranslate nohighlight">\(n+1\)</span> habis dibagi 4.</p>
+</div></blockquote>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[Q_{1}=x_{(\frac{n+1}{4})}\]</div>
+</div></blockquote>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[Q_{2}=x_{(\frac{2(n+1)}{4})}\]</div>
+</div></blockquote>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[Q_{3}=x_{(\frac{3(n+1)}{4})}\]</div>
+</div></blockquote>
+<blockquote>
+<div><p>Untuk banyaknya data <span class="math notranslate nohighlight">\((n)\)</span> ganjil dan <span class="math notranslate nohighlight">\(n+1\)</span> tidak habis dibagi 4.</p>
+</div></blockquote>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[Q_{1}=\frac{x_{(\frac{(n-1)}{4})}+x_{(\frac{(n+3)}{4})}}{2}\]</div>
+</div></blockquote>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[Q_{2}={x_{(\frac{2(n+1)}{4})}}\]</div>
+</div></blockquote>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[Q_{3}=\frac{x_{(\frac{(3n+1)}{4})}+x_{(\frac{(3n+5)}{4})}}{2}\]</div>
+</div></blockquote>
+<blockquote>
+<div><p>Kuartil untuk banyaknya data <span class="math notranslate nohighlight">\((n)\)</span> genap dan habis dibagi 4.</p>
+</div></blockquote>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[Q_{1}=\frac{x(\frac{n}{4})+x(\frac{n}{4}+1)}{2}\]</div>
+</div></blockquote>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[Q_{2}=\frac{x(\frac{n}{2})+x(\frac{n}{2}+1)}{2}\]</div>
+</div></blockquote>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[Q_{3}=\frac{x(\frac{3n}{4})+x(\frac{3n}{4}+1)}{2}\]</div>
+</div></blockquote>
+<blockquote>
+<div><p>Kuartil untuk banyaknya data <span class="math notranslate nohighlight">\((n)\)</span> genap dan tidak habis dibagi 4.</p>
+</div></blockquote>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[Q_{1}=x_{(\frac{n+2}{4})}\]</div>
+</div></blockquote>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[Q_{2}=\frac{x_{(\frac{n}{2})}+x_{(\frac{n}{2}+1)}}{2}\]</div>
+</div></blockquote>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[Q_{3}=x_{(\frac{3n+2}{4})}\]</div>
+</div></blockquote>
+<blockquote>
+<div><p>Rumus kuartil pada data berkelompok</p>
+</div></blockquote>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[Q_{i}=bb_{Qi}+\frac{\frac{i}{4}n-f_{kjs}}{f_{Qi}}.p\]</div>
+</div></blockquote>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\(i\)</span> = kuartil ke-i</p>
+</div></blockquote>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\(bb_{Qi}\)</span> = batas bawah kelas kuartil ke-i</p>
+</div></blockquote>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\(n\)</span> = banyaknya data</p>
+</div></blockquote>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\(f_{kjs}\)</span> = frekuensi kumulatif sebelum kelas kuartil ke-i</p>
+</div></blockquote>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\(f_{Qi}\)</span> = frekuensi kelas kuartil ke-i</p>
+</div></blockquote>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\(p\)</span> = panjang kelas</p>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">kuartil</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;age&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(),</span>
+		<span class="s1">&#39;sex&#39;</span><span class="p">:</span> <span class="n">c</span><span class="p">[</span><span class="s1">&#39;sex&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(),</span><span class="s1">&#39;cp&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;cp&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(),</span>
+    <span class="s1">&#39;trestbps&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;trestbps&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(),</span><span class="s1">&#39;chol&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;chol&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(),</span>
+    <span class="s1">&#39;fbs&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;fbs&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(),</span><span class="s1">&#39;restecg&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;restecg&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(),</span>
+    <span class="s1">&#39;thalach&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;thalach&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(),</span><span class="s1">&#39;exang&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;exang&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(),</span>
+    <span class="s1">&#39;oldpeak&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;oldpeak&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(),</span><span class="s1">&#39;slope&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;slope&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(),</span>
+    <span class="s1">&#39;ca&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;ca&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(),</span><span class="s1">&#39;thal&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;thal&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(),</span>
+     <span class="s1">&#39;target&#39;</span><span class="p">:</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;target&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">()</span>
+    <span class="p">}</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">kuartil</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;quantile&#39;</span><span class="p">])</span>
+<span class="n">df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-f28aeac6-5887-4843-bdcd-d7722db24b38">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>age</th>
+      <th>sex</th>
+      <th>cp</th>
+      <th>trestbps</th>
+      <th>chol</th>
+      <th>fbs</th>
+      <th>restecg</th>
+      <th>thalach</th>
+      <th>exang</th>
+      <th>oldpeak</th>
+      <th>slope</th>
+      <th>ca</th>
+      <th>thal</th>
+      <th>target</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>quantile</th>
+      <td>56.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>130.0</td>
+      <td>240.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>152.0</td>
+      <td>0.0</td>
+      <td>0.8</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>2.0</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-f28aeac6-5887-4843-bdcd-d7722db24b38')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-f28aeac6-5887-4843-bdcd-d7722db24b38 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-f28aeac6-5887-4843-bdcd-d7722db24b38');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">c</span><span class="o">.</span><span class="n">quantile</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>age          56.0
+sex           1.0
+cp            1.0
+trestbps    130.0
+chol        240.0
+fbs           0.0
+restecg       1.0
+thalach     152.0
+exang         0.0
+oldpeak       0.8
+slope         1.0
+ca            0.0
+thal          2.0
+target        1.0
+Name: 0.5, dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="mendeskripsikan-kemiringan-skewned-dari-data-setiap-variabel-bertipe-numerik">
 <h2>3.   Mendeskripsikan kemiringan/skewned dari data setiap variabel(bertipe numerik)<a class="headerlink" href="#mendeskripsikan-kemiringan-skewned-dari-data-setiap-variabel-bertipe-numerik" title="Permalink to this headline">#</a></h2>
@@ -2035,7 +2393,7 @@ dtype: int64
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[Text(0.5, 1.0, &#39;Positive Skewned&#39;)]
 </pre></div>
 </div>
-<img alt="_images/Tugas1_20_2.png" src="_images/Tugas1_20_2.png" />
+<img alt="_images/Tugas1_25_2.png" src="_images/Tugas1_25_2.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -2056,7 +2414,7 @@ dtype: int64
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[Text(0.5, 1.0, &#39;Symmetric Skewned&#39;)]
 </pre></div>
 </div>
-<img alt="_images/Tugas1_21_2.png" src="_images/Tugas1_21_2.png" />
+<img alt="_images/Tugas1_26_2.png" src="_images/Tugas1_26_2.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -2074,10 +2432,10 @@ dtype: int64
   warnings.warn(msg, FutureWarning)
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[Text(0.5, 1.0, &#39;Positive Skewned&#39;)]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[Text(0.5, 1.0, &#39;Positive Skewed&#39;)]
 </pre></div>
 </div>
-<img alt="_images/Tugas1_22_2.png" src="_images/Tugas1_22_2.png" />
+<img alt="_images/Tugas1_27_2.png" src="_images/Tugas1_27_2.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -2095,10 +2453,10 @@ dtype: int64
   warnings.warn(msg, FutureWarning)
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[Text(0.5, 1.0, &#39;Positive Skewned&#39;)]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[Text(0.5, 1.0, &#39;Positive Skewed&#39;)]
 </pre></div>
 </div>
-<img alt="_images/Tugas1_23_2.png" src="_images/Tugas1_23_2.png" />
+<img alt="_images/Tugas1_28_2.png" src="_images/Tugas1_28_2.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -2116,10 +2474,10 @@ dtype: int64
   warnings.warn(msg, FutureWarning)
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[Text(0.5, 1.0, &#39;Positive Skewned&#39;)]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[Text(0.5, 1.0, &#39;Positive Skewed&#39;)]
 </pre></div>
 </div>
-<img alt="_images/Tugas1_24_2.png" src="_images/Tugas1_24_2.png" />
+<img alt="_images/Tugas1_29_2.png" src="_images/Tugas1_29_2.png" />
 </div>
 </div>
 <p>There is a lot more that you can do with outputs (such as including interactive outputs)
@@ -2154,11 +2512,11 @@ with your book. For more information about this, see <a class="reference externa
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="notebooks.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Tugas 1</p>
+            <p class="prev-next-title">Welcome to your Jupyter Book</p>
         </div>
     </a>
 </div>
