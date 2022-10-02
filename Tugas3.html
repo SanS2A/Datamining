@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>LATIHAN &#8212; San Sayidus Solatal A`la</title>
+    <title>C. K-NN (K-NEAREST NEIGHBOR) &#8212; San Sayidus Solatal A`la</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,6 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="D. Clustering K-Means" href="Tugas4.html" />
     <link rel="prev" title="B. DISKRITISASI" href="Tugas2.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -130,7 +131,12 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   LATIHAN
+   C. K-NN (K-NEAREST NEIGHBOR)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Tugas4.html">
+   D. Clustering K-Means
   </a>
  </li>
 </ul>
@@ -340,6 +346,13 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pengertian-k-nn">
+   <strong>
+    Pengertian K-NN
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#knn-using-scikit-learn-on-iris-dataset">
    KNN (using scikit-learn) on iris dataset
   </a>
@@ -370,7 +383,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>LATIHAN</h1>
+                <h1>C. K-NN (K-NEAREST NEIGHBOR)</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -380,6 +393,13 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pengertian-k-nn">
+   <strong>
+    Pengertian K-NN
+   </strong>
+  </a>
+ </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#knn-using-scikit-learn-on-iris-dataset">
    KNN (using scikit-learn) on iris dataset
@@ -412,8 +432,24 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="latihan">
-<h1>LATIHAN<a class="headerlink" href="#latihan" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="c-k-nn-k-nearest-neighbor">
+<h1>C. K-NN (K-NEAREST NEIGHBOR)<a class="headerlink" href="#c-k-nn-k-nearest-neighbor" title="Permalink to this headline">#</a></h1>
+<section id="pengertian-k-nn">
+<h2><strong>Pengertian K-NN</strong><a class="headerlink" href="#pengertian-k-nn" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>K-NN adalah sebuah algoritma untuk melakukan klasifikasi terhadap objek dengan data latih yang jaraknya paling dekat dengan objek tersebut.</p></li>
+<li><p>Algoritma K-NN :</p>
+<ol class="simple">
+<li><p>Menentukan nilai K (jumlah tetangga. Misalnya kita mengambil 3 jumlah tetangga terdekat, maka nilai k=3</p></li>
+<li><p>Menghitung jarak data yang akan dievaluasi terhadap setiap data yang telah ada. Adapun rumus yang digunakan adalah rumus Euclidean (rumus untuk menghitung bobot kemiripan (<em>similarity</em>) dengan Nearest Neighbor
+terdekat) :
+<img alt="image.png" src="https://cdn.mathpix.com/snip/images/G6AE0sijfP7MIP3eoonemtiOPf_I2H44TRZB0YImECk.original.fullsize.png" /></p></li>
+<li><p>Mengurutkan data berdasarkan jarak terkecil hingga terbesar</p></li>
+<li><p>ambil 3 (k) tetangga yg paling dekat, lalu tentukan kelas dari data baru tersebut sesuai dengan tetangga terdekatnya.</p></li>
+</ol>
+</li>
+</ul>
+</section>
 <section id="knn-using-scikit-learn-on-iris-dataset">
 <h2>KNN (using scikit-learn) on iris dataset<a class="headerlink" href="#knn-using-scikit-learn-on-iris-dataset" title="Permalink to this headline">#</a></h2>
 <p>Building a model to classify the species of Iris flower based on the sepal length, speal width, petal length and petal width</p>
@@ -833,7 +869,7 @@ title="Print to PDF"
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;Testing Accuracy&#39;)
 </pre></div>
 </div>
-<img alt="_images/Tugas3_21_1.png" src="_images/Tugas3_21_1.png" />
+<img alt="_images/Tugas3_22_1.png" src="_images/Tugas3_22_1.png" />
 </div>
 </div>
 </section>
@@ -912,6 +948,13 @@ setosa
             <p class="prev-next-subtitle">previous</p>
             <p class="prev-next-title">B. DISKRITISASI</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="Tugas4.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">D. Clustering K-Means</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>
